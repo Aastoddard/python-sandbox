@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Fake Repo Return",
+    "description": "A basic Jenkins return for the repos in a folder",
+    "type": "object",
+    "properties":{
+        "repos": {
+            "description": "The repo name",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "repoNames": {
+                        "type": "string",
+                        "minLength": 5,
+                        "maxLength": 12
+                    }
+                },
+                "required": [
+                    "repoNames"
+                ]
+            }
+        }
+    },
+    "required": [
+        "repos"
+    ]
+}

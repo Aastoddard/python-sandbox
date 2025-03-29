@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Fake Build Numbers Return",
+    "description": "A basic Jenkins return for the build numbers in a branch",
+    "type": "object",
+    "properties":{
+        "last_build": {
+            "description": "The last build number",
+            "type": "number",
+            "minimum": 1
+        },
+        "timestamp":{
+            "description": "build timestamp",
+            "type": "integer",
+            "minimum": 0
+        }
+    },
+    "required": [
+        "last_build",
+        "timestamp"
+    ]
+}

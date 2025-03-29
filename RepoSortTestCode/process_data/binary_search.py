@@ -1,7 +1,5 @@
 
 def find_closest_timestamp(data, target_timestamp):
-    # First, sort the data by timestamp
-    
     # Binary search to find the closest timestamp
     left, right = 0, len(data) - 1
     closest_index = -1
